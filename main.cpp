@@ -8,7 +8,24 @@ int main()
 {
    SetConsoleCP(CP_UTF8);
    SetConsoleOutputCP(CP_UTF8);
-   float a = 10.5, b = 0.154, c = 5.3, y;
-   y = pow(pow((a + b) / exp(a * b), 4) / sin(1. / (a * b)) + pow(a, 3) * b, 5. / 7) * c;
-   cout << "Значення виразу дорівнює " << y << endl;
+ int N;
+ cout <<"Введіть для точки M координату по X";
+ float x;
+cin>> x;
+cout <<"Введіть для точки M координату по Y";;
+float y;
+cin >> y;
+if (y > 0){
+   if (x * x + y *y < 16){
+      if (x >= 0) N = 2;
+      else N = 1;
+   } else{
+      N = 3;
+   }
+} else {
+   N = 4;
+}
+std::cout<<"\t РЕЗУЛЬТАТ:";
+cout<<"Точка M ("<< x <<";"<< y <<") належить області N = "<< N;
+cout<<'\n' + "Для закінчення програми натисніть Enter.";
 }
