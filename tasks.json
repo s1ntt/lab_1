@@ -6,7 +6,7 @@
             "type": "shell",
             "command": "gcc",
             "agrs": [
-                "main.cpp", "-o", "main.exe"
+                "lab1_task1.cpp", "-o", "lab1_task1.exe"
             ],
             "group": {
                 "kind": "build",
